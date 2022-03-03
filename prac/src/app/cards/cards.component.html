@@ -1,7 +1,7 @@
 <div >
     <div >
         <!-- <ng-container *ngFor="let detailof data.details; let index = index" [ngClass]="{'myStyle': 0 === index % 2}">...</ng-container> -->
-      <div *ngFor="let card of cards; even as isEven" [ngStyle]="{ background: isEven ? 'lightblue' : 'white' }">
+      <div *ngFor="let card of cards; odd as isOdd" [ngStyle]="{ background: isOdd ? 'lightblue' : 'red' }">
       <div>
         <div>
           <img [src]="card.img" alt="Card image cap">
